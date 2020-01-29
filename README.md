@@ -1,49 +1,47 @@
 
-# E02a-Control-Structures
-
-Let's start experimenting with some Python code! This is a set of exercises for MSCH-C220; they should give you the tools to help build your first game.
- 
-This exercise assumes that you have already installed Python, GitHub Desktop, and VS Code, and that you have already created a GitHub account. If that is not the case, please refer to previous exercises.
-
-This repository contains several files that you will need to alter to complete the assignment. Fork this repository (instructions below) and edit the files. Commit and push the changes back to GitHub and turn in the URL to your repository on Canvas.
-
-Comments in Python are marked by a # sign (for single-line comments) or three matching quotation marks (''' or """) if a comment requires more than one line. They should also appear in a different color in VS Code. The Python Interpreter ignores comments, so you can safely include any information you want there.
-
-*If you wish your exercise to be graded, please edit the LICENSE file (add the current year and your name).*
-
-Edit README.md to answer the following questions:
 
 - Open main01.py. Before running it, what do you expect this program to do?
-  - Now right click on the main1.py window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened.
-  - What do you think the program did with what you typed in answer to the question?
-- Open main02.py. Before running it, describe how this is different than main01.py.
-  - What do you think the color = input() will do?
-  - Run the program in the terminal and answer the question. Did the program do what you expected?
-- Open main03.py. Before running it, describe how this is different than main02.py.
-  - What is happening on lines 9–12?
-  - Why are lines 10 and 12 indented?
-  - Run the program and answer the question. What happens if you don’t capitalize Red?
-  - What does this tell you about "color"?
-- Open main04.py. Before running it, describe how this is different than main03.py.
-  - What problem is this trying to solve?
-  - Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
-- Open main05.py. What do you expect line 9 to do?
-  - What problem is it trying to solve?
-  - Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “ RED “ or “ red”)?
- - Open main06.py. How is line 9 different than in main05.py?
-   - What would you guess .strip() is doing?
-   - Run the program and answer the question. Is there another way of writing “red” that will break this logic?
- - Open main07.py. Before running this program, how do you expect this to be different than main06.py?
-   - What is happening on line 12?
-   - Run the program and answer the question.
- - Open main08.py. What is the purpose of line 9?
-   - Why are lines 10–17 indented?
-   - Run the program. What would happen if line 10 were moved before line 9 (and no longer indented)?
-   - Make that change and run the program again. (To end any Python program, you can type ctrl-c)
- - Open main09.py. What is happening on line 13?
-   - What is the purpose of “count”?
-   - What is happening on line 22?
-   - Run the program.
+It will say Hello, then ask "What is my favorite color?". where the user will input a color
+  - Now right click on the main1.py window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened. The program said hello and asked for its favorite color. When a color is inputted, the program ends
+  - What do you think the program did with what you typed in answer to the question? Nothing, the code ends with asking for the input
+
+
+- Open main02.py. Before running it, describe how this is different than main01.py. It says color = the inputted color, and prints the color after you input it.
+  - What do you think the color = input() will do? It will allow the program to know what the color written is.
+  - Run the program in the terminal and answer the question. Did the program do what you expected? It did what I expected, it printed the color after I typed it.
+
+- Open main03.py. Before running it, describe how this is different than main02.py.- It has a correct color now.
+  - What is happening on lines 9–12? It allows for if the correct color, Red, is the input, it will say it is correct, and if any other color is the input it will say Sorry, Try again.
+  - Why are lines 10 and 12 indented? They answer directly to if 9 and 11 are true or false.
+  - Run the program and answer the question. What happens if you don’t capitalize Red? It says it is incorrect.
+  - What does this tell you about "color"? You need to input it exactly as the program has it typed.
+
+- Open main04.py. Before running it, describe how this is different than main03.py. It has Red or red being correct.
+  - What problem is this trying to solve? It allows for a non-capitalized version of red to also be correct.
+  - Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)? It is still incorrect.
+
+- Open main05.py. What do you expect line 9 to do?- Makes your input all lower case
+  - What problem is it trying to solve? Any capitalizations making the answer incorrect
+  - Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “ RED “ or “ red”)? It is incorrect
+
+ - Open main06.py. How is line 9 different than in main05.py? It says both lower and strip instead of just lower
+   - What would you guess .strip() is doing? takes away all spaces and other characters.
+   - Run the program and answer the question. Is there another way of writing “red” that will break this logic? It corrects for spaces, but not for a hyphen or something similar to that.
+
+ - Open main07.py. Before running this program, how do you expect this to be different than main06.py? It has a second, almost correct color.
+   - What is happening on line 12? If the input is pink, it will tell you "Close!" Instead of being completely incorrect.
+   - Run the program and answer the question. My prediction is what happened.
+
+ - Open main08.py. What is the purpose of line 9? It allows you to keep guessing if you're wrong at first.
+   - Why are lines 10–17 indented? They happen in the case that line 9 is true
+   - Run the program. What would happen if line 10 were moved before line 9 (and no longer indented)? There is an error and it doesn't repeat.
+   - Make that change and run the program again. (To end any Python program, you can type ctrl-c) There is an indentation error.
+
+ - Open main09.py. What is happening on line 13? It counts the number of inputs
+   - What is the purpose of “count”? To count how many guesses there were
+   - What is happening on line 22? There is no line 22, but on 21 after you guess correctly it shows how many guesses it took.
+   - Run the program. What I predicted occured.
+   
  - *Extra credit:* open main10.py. Add a comment to each line describing what it is doing (a comment follows a pound sign [#]).
  - *Extra credit:* open main11.py. What is happening on lines 6-11?
   
